@@ -63,7 +63,9 @@
               class="mx-2"
             ></v-switch>
           </v-list-item-action>
-          <v-list-item-title>Dark Theme</v-list-item-title>
+          <v-list-item-title class="right-menu-text"
+            >Mode Gelap</v-list-item-title
+          >
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
@@ -83,17 +85,17 @@ export default {
       items: [
         {
           icon: 'mdi-apps',
-          title: 'Welcome',
+          title: 'Selamat Datang!',
           to: '/'
         },
         {
           icon: 'mdi-chart-bubble',
-          title: 'Inspire',
+          title: 'Inspirasi',
           to: '/inspire'
         },
         {
           icon: 'mdi-gesture-tap',
-          title: 'Tap and Go',
+          title: 'Tap Acak',
           to: '/random'
         }
       ],
