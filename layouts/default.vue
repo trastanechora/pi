@@ -86,6 +86,11 @@ export default {
           icon: 'mdi-chart-bubble',
           title: 'Inspire',
           to: '/inspire'
+        },
+        {
+          icon: 'mdi-gesture-tap',
+          title: 'Tap and Go',
+          to: '/random'
         }
       ],
       miniVariant: false,
