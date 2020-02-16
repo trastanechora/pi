@@ -88,20 +88,6 @@ export default {
     Logo,
     VuetifyLogo
   },
-  mounted() {
-    console.warn('>>> Hello World!')
-    console.warn(
-      '>>> This is dark value at vuetify theme',
-      this.$vuetify.theme.dark
-    )
-    // this.$vuetify.theme.dark = false
-    setTimeout(function() {
-      this.$vuetify.theme.dark = false
-      console.warn(
-        '>>> This is dark value at vuetify theme after timeout ',
-        this.$vuetify.theme.dark
-      )
-    }, 3000)
-  }
+  mounted() {}
 }
 </script>
