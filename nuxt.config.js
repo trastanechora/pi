@@ -9,6 +9,7 @@ const config = {
   env: {
     NODE_ENV: process.env.NODE_ENV,
     app_title: process.env.APP_TITLE,
+    app_short_title: process.env.APP_SHORT_TITLE,
     api_url: process.env.API_URL
   },
   manifest: {
@@ -35,7 +36,7 @@ const config = {
   // Customize the progress-bar color
   loading: { color: '#19bd00' },
   // Global CSS
-  css: [],
+  css: ['~/assets/style/app.css'],
   // Plugins to load before mounting the App
   plugins: [],
   // Nuxt.js dev-modules
@@ -68,6 +69,15 @@ const config = {
       dark: false,
       themes: {
         dark: {
+          primary: colors.blue.darken2,
+          accent: colors.grey.darken3,
+          secondary: colors.amber.darken3,
+          info: colors.teal.lighten1,
+          warning: colors.amber.base,
+          error: colors.deepOrange.accent4,
+          success: colors.green.accent3
+        },
+        custom: {
           primary: colors.blue.darken2,
           accent: colors.grey.darken3,
           secondary: colors.amber.darken3,
