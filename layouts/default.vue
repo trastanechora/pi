@@ -1,5 +1,5 @@
 <template>
-  <v-app :dark="true">
+  <v-app dark>
     <v-navigation-drawer
       v-model="drawer"
       :mini-variant="miniVariant"
@@ -57,14 +57,18 @@
       <v-list>
         <v-list-item>
           <v-list-item-action>
-            <v-switch v-model="$vuetify.theme.dark"></v-switch>
+            <v-switch
+              v-model="$vuetify.theme.dark"
+              :dense="true"
+              class="mx-2"
+            ></v-switch>
           </v-list-item-action>
           <v-list-item-title>Dark Theme</v-list-item-title>
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
-      <span>&copy; 2019</span>
+      <span class="footer-text">{{ title }} &copy; 2020</span>
     </v-footer>
   </v-app>
 </template>
@@ -96,8 +100,11 @@ export default {
       miniVariant: false,
       right: true,
       rightDrawer: false,
-      title: 'Vuetify.js'
+      title: process.env.app_short_title || 'Vuetify.js'
     }
+  },
+  mounted() {
+    console.warn('>>> check env: ', process.env.app_title)
   }
 }
 </script>
