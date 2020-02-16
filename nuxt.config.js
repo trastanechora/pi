@@ -1,13 +1,26 @@
 import colors from 'vuetify/es5/util/colors'
+require('dotenv').config()
 
-export default {
+const config = {
   mode: 'spa',
-  /*
-   ** Headers of the page
-   */
+  server: {
+    port: process.env.PORT || 3030
+  },
+  env: {
+    NODE_ENV: process.env.NODE_ENV,
+    app_title: process.env.APP_TITLE,
+    api_url: process.env.API_URL
+  },
+  manifest: {
+    lang: 'id',
+    name: process.env.APP_TITLE,
+    short_name: process.env.APP_SHORT_TITLE,
+    theme_color: '#19bd00',
+    display: 'standalone'
+  },
+  // Headers of the page
   head: {
-    titleTemplate: '%s - ' + process.env.npm_package_name,
-    title: process.env.npm_package_name || '',
+    title: process.env.APP_TITLE || process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -19,35 +32,32 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
   },
-  /*
-   ** Customize the progress-bar color
-   */
-  loading: { color: '#fff' },
-  /*
-   ** Global CSS
-   */
+  // Customize the progress-bar color
+  loading: { color: '#19bd00' },
+  // Global CSS
   css: [],
-  /*
-   ** Plugins to load before mounting the App
-   */
+  // Plugins to load before mounting the App
   plugins: [],
-  /*
-   ** Nuxt.js dev-modules
-   */
+  // Nuxt.js dev-modules
   buildModules: ['@nuxtjs/vuetify'],
-  /*
-   ** Nuxt.js modules
-   */
+  // Nuxt.js modules
   modules: [
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    '@nuxtjs/dotenv'
   ],
   /*
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
   axios: {},
+  // Render opt
+  render: {
+    bundleRenderer: {
+      shouldPrefetch: (type) => ['script', 'style'].includes(type)
+    }
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -55,7 +65,7 @@ export default {
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
     theme: {
-      dark: true,
+      dark: false,
       themes: {
         dark: {
           primary: colors.blue.darken2,
@@ -69,13 +79,11 @@ export default {
       }
     }
   },
-  /*
-   ** Build configuration
-   */
+  // Build configuration
   build: {
-    /*
-     ** You can extend webpack config here
-     */
-    extend(config, ctx) {}
+    // You can extend webpack config here
+    // extend(config, ctx) { }
   }
 }
+
+export default config
