@@ -104,9 +104,6 @@ export default {
       rightDrawer: false,
       title: process.env.app_short_title || 'Vuetify.js'
     }
-  },
-  mounted() {
-    console.warn('>>> check env: ', process.env.app_title)
   }
 }
 </script>

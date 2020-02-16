@@ -59,6 +59,19 @@ const config = {
       shouldPrefetch: (type) => ['script', 'style'].includes(type)
     }
   },
+  // Workbox options
+  workbox: {
+    workboxURL:
+      'https://cdn.jsdelivr.net/npm/workbox-cdn/workbox/workbox-sw.js',
+    cleanupOutdatedCaches: true,
+    globPatterns: [
+      '**/*.{css,png,svg,json,woff2}',
+      '**/img/*',
+      '**/icons/*',
+      '**/fonts/*'
+    ],
+    offlineAssets: ['/icon.png', '/favicon.ico']
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
