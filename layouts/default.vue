@@ -8,6 +8,16 @@
       app
     >
       <v-list>
+        <v-list-item>
+          <v-btn icon @click.stop="miniVariant = !miniVariant">
+            <v-icon
+              >mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon
+            >
+          </v-btn>
+          <v-list-item-content @click.stop="miniVariant = !miniVariant">
+            <v-list-item-title v-text="'Lipat'" />
+          </v-list-item-content>
+        </v-list-item>
         <v-list-item
           v-for="(item, i) in items"
           :key="i"
