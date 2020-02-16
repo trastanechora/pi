@@ -7,9 +7,10 @@ This is a personal project of mine, the app is intended to show random quotes th
 This app is powerded by NuxtJS. Any suggestion and contribution is welcome.
 
 ## Features
-1. Simple interface
+1. Mobile friendly simple interface
 2. Display quotes
 3. Toggle light and dark theme
+4. Installable on most Android mobile phones (PWA)
 
 ## Build Setup
 ``` bash
