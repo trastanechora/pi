@@ -1,8 +1,4 @@
-<p align="center">
-<a href="https://app.netlify.com/sites/portal-inspirasi/deploys"><img src="https://api.netlify.com/api/v1/badges/d5ec5f98-52e2-4920-8935-906bed92b336/deploy-status" alt="Netlify Deploy Status"></a>
-<a href="https://github.com/prettier/prettier"><img src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square" alt="Code style: Prettier"></a>
-<a href="https://snyk.io/test/github/trastanechora/pi?targetFile=package.json"><img src="https://snyk.io/test/github/trastanechora/pi/badge.svg?targetFile=package.json" alt="Known Vulnerabilities"></a>
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5ec5f98-52e2-4920-8935-906bed92b336/deploy-status)](https://app.netlify.com/sites/portal-inspirasi/deploys) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Known Vulnerabilities](https://snyk.io/test/github/trastanechora/pi/badge.svg?targetFile=package.json)](https://snyk.io/test/github/trastanechora/pi?targetFile=package.json)
 
 # Pi Project
 
