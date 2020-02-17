@@ -1,7 +1,7 @@
 {
-  "name": "growise",
+  "name": "portal-inspirasi",
   "version": "1.0.0",
-  "description": "My bedazzling Nuxt.js project",
+  "description": "Hopefuly be an inspiring Nuxt.js project",
   "author": "trastanechora",
   "private": true,
   "scripts": {
