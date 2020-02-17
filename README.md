@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/d5ec5f98-52e2-4920-8935-906bed92b336/deploy-status)](https://app.netlify.com/sites/portal-inspirasi/deploys)
+
 # Pi Project
 
 > A project about Quotes, to make up your days :)
