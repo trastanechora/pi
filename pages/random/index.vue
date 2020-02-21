@@ -12,8 +12,8 @@ const components = {
 
 const temp = require(`~/assets/quotedb/quotes1.json`)
 const defaultHandler = {
-  content: 'Tap untuk memulai',
-  author: ':)'
+  content: 'Oops terjadi kesalahan. Mohon muat ulang.',
+  author: ''
 }
 
 export default {
@@ -33,20 +33,10 @@ export default {
   },
   methods: {
     getQuotes() {
-      // console.warn('>>> get quotes function is triggered!')
       this.unProcessedQuoteObject = temp.quote_list
       this.processedQuoteObject = null
-      // console.warn('### temp ', temp)
-      // console.warn('### unProcessedQuoteObject ', this.unProcessedQuoteObject)
-      // console.warn('### processedQuoteObject ', this.processedQuoteObject)
     },
     getRandomQuote() {
-      // console.warn(
-      //   '>>> check unProcessedQuoteObject',
-      //   this.unProcessedQuoteObject
-      // )
-      // console.warn('>>> Check chosenIndex: ', this.chosenIndex)
-      // console.warn('### temp ', temp)
       if (this.unProcessedQuoteObject.length > 0) {
         this.getRandomIndex(0, this.unProcessedQuoteObject.length - 1)
         this.selectedQuote = this.unProcessedQuoteObject[this.chosenIndex]
@@ -55,8 +45,6 @@ export default {
       } else {
         this.getQuotes()
       }
-      // console.warn('>>> Random quote is: ', this.selectedQuote)
-      // console.warn('>>> History quote is: ', this.history)
     },
     getRandomIndex(min, max) {
       min = Math.ceil(min)
