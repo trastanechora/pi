@@ -10,10 +10,12 @@ const components = {
   QuoteCard: () => import('~/components/QuoteCard')
 }
 
-const temp = require(`~/assets/quotedb/quotes1.json`)
+const temp = require(`~/assets/quotedb/quotes-mock.json`)
 const defaultHandler = {
-  content: 'Oops terjadi kesalahan. Mohon muat ulang.',
-  author: ''
+  content: ['Oops terjadi kesalahan. Mohon muat ulang.'],
+  author: {
+    name: '-'
+  }
 }
 
 export default {
