@@ -1,0 +1,146 @@
+{
+	"quote_list": [
+		{
+			"id": 1,
+			"content": [
+				"Jangan bandingkan hidupmu dengan yang lain",
+				"Sebagaimana tak mungkin membandingkan matahari dan bulan, ia bersina pada waktunya masing-masing"
+			],
+			"description": [
+				"Saat kita mulai membandingkan diri dengan orang lain, akan selalu ada orang yang lebih baik dari kita.",
+				"Tidak peduli setampan apapun, secantik apapun, selalu ada orang lain yang lebih menarik, lebih pintar, lebih kaya. Dan seterusnya.... Happines is found when you stop comparing yourself to other people.",
+				"Kebahagiaan akan ditemukan jika kita berhenti membanding-bandingkan dengan orang lain.",
+				"Tidak ada seorang pun yang ga mencari bahagia dalam hidupnya.",
+				"So, mulai hari ini stop membandingkan diri dengan orang lain."
+			],
+			"author": {
+				"id": 1,
+				"name": "Atiummuaqila",
+				"link": "/author/1"
+			},
+			"category": {
+				"id": 1,
+				"name": "Kehidupan"
+			},
+			"tags": [
+				"Kebahagiaan"
+			]
+		},
+		{
+			"id": 2,
+			"content": [
+				"Tidak ada manusia yang luar biasa tanpa melewati cobaan",
+				"Cobaan berat adalah sarana agar kita bisa megembangkan diri dan berpikir cara menyelesaikannya",
+				"Kita pasti bisa mengatasinya & terlahir lagi sebagai pribadi yang tangguh"
+			],
+			"description": [
+				"Berikut 10 kalimat bijak yang akan menguatkanmu saat merasa sedih dan lemah..",
+				"1. Orang yang tidak pernah terjatuh bukanlah orang yang kuat.",
+				"Orang yang kuat malah orang yang selalu bangkit setiap kali kita terjatuh.",
+				"2. Setiap sesuatu di dunia tidak ada yang diciptakan sia-sia.",
+				"Selalu ada hikmah di balik sebuah peristiwa. Hanya saja kita butuh kesadaran lebih untuk dapat melihatnya.",
+				"3. Seseorang pasti pernah melakukan kesalahan.",
+				"Hanya saja bila kita membiarkannya, kita melakukan kesalahan kedua. Membiarkan kesalahan adalah sebuah kesalahan.",
+				"4. Tidak ada gunanya menyesali hal buruk yang terjadi.",
+				"Lebih baik kita melakukan sesuatu untuk mengatasinya, sekecil apapun itu. Daripada mengumpat kegelapan, lebih baik kita menghidupkan sebuah lilin kecil yang bisa menerangi.",
+				"5. Hidup sangatlah sederhana, begitu pula sebuah masalah.",
+				"Bila masalah tidak kunjung selesai, jangan-jangan yang membuat rumit adalah kita sendiri.",
+				"6. Orang yang kuat bukanlah orang yang bisa mengalahkan banyak orang.",
+				"Orang terkuat adalah yang bisa megalahkan dan menguasai dirinya sendiri.",
+				"7. Disalahkan atau dituduh sesuatu bukanlah sebuah masalah.",
+				"Menjadi masalah ketika kita terus mengingatnya menjadi sebuah dendam yang menggerogoti hati dan membuang waktu kita.",
+				"8. Ketulusan dan Kebenaran adalah pondasi datangnya berkah atau keberuntungan. Bila hatimu tidak tenang, mungkin kamu melupakan mereka.",
+				"9. Sebelum tergesa-gesa memperbaiki kesalahan, lebih baik kita berpikir secara cermat penyelesaiannya.",
+				"Jangan sampai muncul masalah baru karena pertimbangan yang tidak matang.",
+				"10. Permata memerlukan gesekan untuk dapat memolesnya hingga jadi berkilau.",
+				"Begitu juga manusia."
+			],
+			"author": {
+				"id": 1,
+				"name": "Atiummuaqila",
+				"link": "/author/1"
+			},
+			"category": {
+				"id": 2,
+				"name": "Kehidupan"
+			},
+			"tags": [
+				"Cobaan",
+				"Ujian",
+				"Masalah",
+				"Beban"
+			]
+		},
+		{
+			"id": 3,
+			"content": [
+				"First, solve the problem. Then, write the code. #3, this is 1st paragraph",
+				"First, solve the problem. Then, write the code. #3, this is 2nd paragraph",
+				"First, solve the problem. Then, write the code. #3, this is 3nd paragraph"
+			],
+			"description": [
+				"This is description 1st paragraph, In urna dui, interdum et cursus non, rhoncus sit amet dui. Suspendisse ut velit id eros aliquam lacinia eget eu nulla. Nam gravida diam sed dui venenatis, auctor consequat felis semper. Aliquam id vestibulum velit. Nulla et sem quis nunc rhoncus mollis vel vel risus. Praesent pellentesque, nibh eu eleifend vestibulum, nisi tellus ornare velit, vitae pulvinar felis metus non ligula. Aenean tincidunt pulvinar orci at vehicula. In eleifend et lacus in feugiat. Morbi gravida rhoncus magna, in consequat lorem semper et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sed mi nec sapien tempus auctor ut eu nulla.",
+				"This is description 2nd paragraph, Sed nec ex tellus. Aliquam nunc elit, finibus a nulla ut, viverra tempor felis. Nulla vulputate ut metus sit amet auctor. Nam facilisis varius nunc. Donec sed ipsum fringilla, fringilla quam feugiat, tempus justo. Morbi placerat dolor nec turpis convallis hendrerit. Duis rutrum massa ut condimentum imperdiet. Phasellus id risus semper, dignissim velit ac, ultricies augue."
+			],
+			"author": {
+				"id": 2,
+				"name": "Mae author #2",
+				"link": "/author/2"
+			},
+			"category": {
+				"id": 2,
+				"name": "Category 2"
+			},
+			"tags": [
+				"tag 1",
+				"tag 2"
+			]
+		},
+		{
+			"id": 4,
+			"content": [
+				"First, solve the problem. Then, write the code. #4, this is 1st paragraph"
+			],
+			"description": [
+				"This is description 1st paragraph, In urna dui, interdum et cursus non, rhoncus sit amet dui. Suspendisse ut velit id eros aliquam lacinia eget eu nulla. Nam gravida diam sed dui venenatis, auctor consequat felis semper. Aliquam id vestibulum velit. Nulla et sem quis nunc rhoncus mollis vel vel risus. Praesent pellentesque, nibh eu eleifend vestibulum, nisi tellus ornare velit, vitae pulvinar felis metus non ligula. Aenean tincidunt pulvinar orci at vehicula. In eleifend et lacus in feugiat. Morbi gravida rhoncus magna, in consequat lorem semper et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sed mi nec sapien tempus auctor ut eu nulla.",
+				"This is description 2nd paragraph, Sed nec ex tellus. Aliquam nunc elit, finibus a nulla ut, viverra tempor felis. Nulla vulputate ut metus sit amet auctor. Nam facilisis varius nunc. Donec sed ipsum fringilla, fringilla quam feugiat, tempus justo. Morbi placerat dolor nec turpis convallis hendrerit. Duis rutrum massa ut condimentum imperdiet. Phasellus id risus semper, dignissim velit ac, ultricies augue."
+			],
+			"author": {
+				"id": 3,
+				"name": "Mae author #3",
+				"link": "/author/3"
+			},
+			"category": {
+				"id": 3,
+				"name": "Category 3"
+			},
+			"tags": [
+				"tag 1",
+				"tag 2"
+			]
+		},
+		{
+			"id": 5,
+			"content": [
+				"First, solve the problem. Then, write the code. #5, this is 1st paragraph"
+			],
+			"description": [
+				"This is description 1st paragraph, In urna dui, interdum et cursus non, rhoncus sit amet dui. Suspendisse ut velit id eros aliquam lacinia eget eu nulla. Nam gravida diam sed dui venenatis, auctor consequat felis semper. Aliquam id vestibulum velit. Nulla et sem quis nunc rhoncus mollis vel vel risus. Praesent pellentesque, nibh eu eleifend vestibulum, nisi tellus ornare velit, vitae pulvinar felis metus non ligula. Aenean tincidunt pulvinar orci at vehicula. In eleifend et lacus in feugiat. Morbi gravida rhoncus magna, in consequat lorem semper et. Interdum et malesuada fames ac ante ipsum primis in faucibus. Suspendisse sed mi nec sapien tempus auctor ut eu nulla."
+			],
+			"author": {
+				"id": 1,
+				"name": "Mae author #1",
+				"link": "/author/1"
+			},
+			"category": {
+				"id": 4,
+				"name": "Category 4"
+			},
+			"tags": [
+				"tag 1",
+				"tag 2"
+			]
+		}
+	],
+	"quote_count": 5
+}
