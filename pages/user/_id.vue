@@ -23,6 +23,7 @@
     </template>
     <template v-else>
       <h1>User not found.</h1>
+      <v-btn>Test</v-btn>
     </template>
   </div>
 </template>

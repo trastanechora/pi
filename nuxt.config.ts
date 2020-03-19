@@ -37,6 +37,9 @@ export default {
     description: "Portal Inspirasi app built with Nuxt.js & Typescript",
     theme_color: "#188269"
   },
+  buildModules: [
+    '@nuxtjs/vuetify',
+  ],
   modules: ["@nuxtjs/pwa", "@nuxtjs/component-cache", "@nuxtjs/axios"],
   axios: {
     debug: isDev,

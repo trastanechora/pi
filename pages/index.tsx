@@ -6,4 +6,4 @@ import { validFeeds } from "~/common/api"
     redirect("/" + validFeeds[0])
   }
 })
-export default class Index extends Vue {}
+export default class Index extends Vue { }
