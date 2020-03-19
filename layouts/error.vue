@@ -9,6 +9,9 @@
     <NuxtLink to="/">
       Home page
     </NuxtLink>
+    <v-icon light>
+      mdi-repeat
+    </v-icon>
   </v-app>
 </template>
 
