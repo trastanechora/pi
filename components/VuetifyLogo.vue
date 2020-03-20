@@ -6,6 +6,12 @@
   >
 </template>
 
+<script lang="ts">
+  export default {
+    
+  }
+</script>
+  
 <style>
 .VuetifyLogo {
   height:180px;
