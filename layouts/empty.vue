@@ -6,24 +6,19 @@
         <nuxt />
       </v-container>
     </v-content>
-    <BottomNav></BottomNav>
   </v-app>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'nuxt-property-decorator'
 import TopToolbar from '../components/TopToolbar.vue'
-import BottomNav from '../components/BottomNav.vue'
 
 @Component({
+  name: "emptyLayout",
   components: {
-    TopToolbar,
-    BottomNav
+    TopToolbar
   }
 })
 export default class extends Vue {
-  created() {
-    console.warn('>>> Hello Typescript! <<<')
-  }
 }
 </script>

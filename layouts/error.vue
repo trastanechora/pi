@@ -9,33 +9,32 @@
     <NuxtLink to="/">
       Home page
     </NuxtLink>
-    <v-icon light>
-      mdi-repeat
-    </v-icon>
   </v-app>
 </template>
 
-<script>
-export default {
-  layout: 'empty',
-  props: {
-    error: {
-      type: Object,
-      default: null
-    }
-  },
-  data() {
-    return {
-      pageNotFound: '404 Not Found',
-      otherError: 'An error occurred'
-    }
-  },
-  head() {
+<script lang="ts">
+import { Component, Vue, Prop } from 'nuxt-property-decorator'
+
+@Component({
+  name: "errorLayout",
+  layout: "empty",
+  head(this: Error) {
     const title =
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
     return {
       title
     }
+  }
+})
+export default class Error extends Vue {
+  pageNotFound: string = '404 Not Found'
+  otherError: string = 'An error occurred'
+
+  @Prop()
+  error: any
+
+  mounted() {
+    console.warn('>>> this: ', this)
   }
 }
 </script>
