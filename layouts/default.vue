@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'vue-property-decorator'
+import { Component, Vue } from 'nuxt-property-decorator'
 import TopToolbar from '../components/TopToolbar.vue'
 import BottomNav from '../components/BottomNav.vue'
 
