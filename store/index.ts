@@ -1,62 +1,62 @@
-import { MutationTree, ActionTree } from "vuex"
+import { MutationTree, ActionTree } from "vuex";
 
-import Vue from "vue"
+import Vue from "vue";
 
 // import { CancelToken } from "axios"
-const baseUrl = "https://api.hnpwa.com/v0" // "/api"
+// const baseUrl = 'https://api.hnpwa.com/v0' // "/api"
 
 interface Dictionary<T> {
-  [key: string]: T
+  [key: string]: T;
 }
 
 // export interface Users {
 //   [key: string]: User
 // }
 export interface User {
-  created: string
-  created_time: number
-  id: string
-  karma: number
+  created: string;
+  createdTime: number;
+  id: string;
+  karma: number;
 }
 
 export interface Items {
-  [key: number]: Item
+  [key: number]: Item;
 }
 export interface Item {
-  comments: any[]
-  comments_count: number
-  content: string
-  domain: string
-  id: number
-  points: number
-  time: number | Date | undefined
-  time_ago: string
-  title: string
-  type: string
-  url: string
-  user: string
+  comments: any[];
+  commentsCount: number;
+  content: string;
+  domain: string;
+  id: number;
+  points: number;
+  time: number | Date | undefined;
+  timeAgo: string;
+  title: string;
+  type: string;
+  url: string;
+  user: string;
 }
 
 // export interface Feeds {
 //   [key: string]: Feed
 // }
 export interface Feed {
-  comments_count: number
-  domain: string
-  id: number
-  points: number
-  time: number | Date | undefined
-  time_ago: string
-  title: string
-  type: string
-  url: string
-  user: string
+  commentsCount: number;
+  domain: string;
+  id: number;
+  points: number;
+  time: number | Date | undefined;
+  timeAgo: string;
+  title: string;
+  type: string;
+  url: string;
+  user: string;
 }
 
 export interface IRootState {
-  items: Items
-  users: Dictionary<User>
-  feeds: Dictionary<Feed>
+  items: Items;
+  users: Dictionary<User>;
+  feeds: Dictionary<Feed>;
 }
 // =================================================
 // State
@@ -72,40 +72,38 @@ const s = (): IRootState => {
     feeds: {
       /* [page: number] : [ [id: number] ] */
     }
-  }
+  };
 
-  return state
-}
+  return state;
+};
 
 // =================================================
 // Mutations
 // =================================================
 const mutations: MutationTree<IRootState> = {
   SET_FEED: (state, { feed, ids, page }) => {
-    Vue.set(state.feeds[feed], page, ids)
+    Vue.set(state.feeds[feed], page, ids);
   },
   SET_ITEM: (state, { item }: { item: Item }) => {
     if (item) {
-      Vue.set(state.items as Item[], item.id, item)
+      Vue.set(state.items as Item[], item.id, item);
     }
   },
   SET_ITEMS: (state, { items }: { items: Item[] }) => {
     items.forEach(item => {
       if (item) {
-        Vue.set(state.items as Item[], item.id, item)
+        Vue.set(state.items as Item[], item.id, item);
       }
-    })
+    });
   },
   SET_USER: (state, { id, user }: { id: string; user: User }) => {
-    Vue.set(state.users, id, user || false) /* false means user not found */
+    Vue.set(state.users, id, user || false); /* false means user not found */
   }
-}
+};
 
 // =================================================
 // Actions
 // =================================================
-const actions: ActionTree<IRootState, any> = {
+const actions: ActionTree<IRootState, any> = {};
 
-}
-
-export { s as state, actions, mutations }
+export { s as state, actions, mutations };
