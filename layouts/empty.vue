@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <TopToolbar></TopToolbar>
+    <TopToolbar />
     <v-content>
       <v-container>
         <nuxt />
@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-import TopToolbar from '../components/TopToolbar.vue'
+import { Component, Vue } from "nuxt-property-decorator";
+import TopToolbar from "../components/TopToolbar.vue";
 
 @Component({
   name: "emptyLayout",
@@ -19,6 +19,5 @@ import TopToolbar from '../components/TopToolbar.vue'
     TopToolbar
   }
 })
-export default class extends Vue {
-}
+export default class extends Vue {}
 </script>

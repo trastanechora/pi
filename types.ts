@@ -9,10 +9,9 @@ export interface NewsArticle {
 }
 
 export enum ArticleType {
-  TopStory = 'TOP_STORY',
-  CodeExample = 'CODE_EXAMPLE'
+  TopStory = "TOP_STORY",
+  CodeExample = "CODE_EXAMPLE"
 }
-
 
 // Store root state
 export interface RootState {

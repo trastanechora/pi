@@ -24,28 +24,15 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar
-      :clipped-left="clipped"
-      fixed
-      app
-    >
+    <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon>mdi-{{ `chevron-${miniVariant ? 'right' : 'left'}` }}</v-icon>
+      <v-btn icon @click.stop="miniVariant = !miniVariant">
+        <v-icon>mdi-{{ `chevron-${miniVariant ? "right" : "left"}` }}</v-icon>
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
+      <v-btn icon @click.stop="clipped = !clipped">
         <v-icon>mdi-application</v-icon>
       </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
+      <v-btn icon @click.stop="fixed = !fixed">
         <v-icon>mdi-minus</v-icon>
       </v-btn>
       <v-toolbar-title v-text="title" />
@@ -61,27 +48,27 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-import { Menus } from '../types'
+import { Component, Vue } from "nuxt-property-decorator";
+import { Menus } from "../types";
 
 @Component
 export default class TopToolbar extends Vue {
-  title: string = 'Vuetify.js'
-  clipped: boolean = false
-  drawer: boolean = false
-  fixed: boolean = false
-  miniVariant: boolean = false
+  title: string = "Vuetify.js";
+  clipped: boolean = false;
+  drawer: boolean = false;
+  fixed: boolean = false;
+  miniVariant: boolean = false;
   items: Menus[] = [
     {
-      icon: 'mdi-apps',
-      title: 'Welcome',
-      to: '/'
+      icon: "mdi-apps",
+      title: "Welcome",
+      to: "/"
     },
     {
-      icon: 'mdi-chart-bubble',
-      title: 'Inspire',
-      to: '/inspire'
+      icon: "mdi-chart-bubble",
+      title: "Inspire",
+      to: "/inspire"
     }
-  ]
+  ];
 }
 </script>
