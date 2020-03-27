@@ -1,19 +1,19 @@
 <template>
   <v-app dark>
-    <TopToolbar></TopToolbar>
+    <TopToolbar />
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <BottomNav></BottomNav>
+    <BottomNav />
   </v-app>
 </template>
 
 <script lang="ts">
-import { Component, Vue } from 'nuxt-property-decorator'
-import TopToolbar from '../components/TopToolbar.vue'
-import BottomNav from '../components/BottomNav.vue'
+import { Component, Vue } from "nuxt-property-decorator";
+import TopToolbar from "../components/TopToolbar.vue";
+import BottomNav from "../components/BottomNav.vue";
 
 @Component({
   components: {
@@ -22,8 +22,8 @@ import BottomNav from '../components/BottomNav.vue'
   }
 })
 export default class extends Vue {
-  created() {
-    console.warn('>>> Hello Typescript! <<<')
-  }
+  // created () {
+  //   console.warn('>>> Hello Typescript! <<<')
+  // }
 }
 </script>
