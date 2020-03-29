@@ -10,11 +10,11 @@
 </template>
 
 <script lang="ts">
-import { Component, Vue } from "nuxt-property-decorator";
-import TopToolbar from "../components/TopToolbar.vue";
+import { Component, Vue } from 'nuxt-property-decorator'
+import TopToolbar from '../components/TopToolbar.vue'
 
 @Component({
-  name: "emptyLayout",
+  name: 'emptyLayout',
   components: {
     TopToolbar
   }
