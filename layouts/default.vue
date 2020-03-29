@@ -1,12 +1,12 @@
 <template>
   <v-app dark>
-    <TopToolbar></TopToolbar>
+    <TopToolbar />
     <v-content>
       <v-container>
         <nuxt />
       </v-container>
     </v-content>
-    <BottomNav></BottomNav>
+    <BottomNav />
   </v-app>
 </template>
 
@@ -22,8 +22,8 @@ import BottomNav from '../components/BottomNav.vue'
   }
 })
 export default class extends Vue {
-  created() {
-    console.warn('>>> Hello Typescript! <<<')
-  }
+  // created () {
+  //   console.warn('>>> Hello Typescript! <<<')
+  // }
 }
 </script>

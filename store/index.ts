@@ -1,9 +1,9 @@
-import { MutationTree, ActionTree } from "vuex"
+import { MutationTree, ActionTree } from 'vuex'
 
-import Vue from "vue"
+import Vue from 'vue'
 
 // import { CancelToken } from "axios"
-const baseUrl = "https://api.hnpwa.com/v0" // "/api"
+// const baseUrl = 'https://api.hnpwa.com/v0' // "/api"
 
 interface Dictionary<T> {
   [key: string]: T
@@ -14,7 +14,7 @@ interface Dictionary<T> {
 // }
 export interface User {
   created: string
-  created_time: number
+  createdTime: number
   id: string
   karma: number
 }
@@ -24,13 +24,13 @@ export interface Items {
 }
 export interface Item {
   comments: any[]
-  comments_count: number
+  commentsCount: number
   content: string
   domain: string
   id: number
   points: number
   time: number | Date | undefined
-  time_ago: string
+  timeAgo: string
   title: string
   type: string
   url: string
@@ -41,12 +41,12 @@ export interface Item {
 //   [key: string]: Feed
 // }
 export interface Feed {
-  comments_count: number
+  commentsCount: number
   domain: string
   id: number
   points: number
   time: number | Date | undefined
-  time_ago: string
+  timeAgo: string
   title: string
   type: string
   url: string
@@ -90,7 +90,7 @@ const mutations: MutationTree<IRootState> = {
     }
   },
   SET_ITEMS: (state, { items }: { items: Item[] }) => {
-    items.forEach(item => {
+    items.forEach((item) => {
       if (item) {
         Vue.set(state.items as Item[], item.id, item)
       }
@@ -104,8 +104,6 @@ const mutations: MutationTree<IRootState> = {
 // =================================================
 // Actions
 // =================================================
-const actions: ActionTree<IRootState, any> = {
-
-}
+const actions: ActionTree<IRootState, any> = {}
 
 export { s as state, actions, mutations }

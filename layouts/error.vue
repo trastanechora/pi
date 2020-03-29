@@ -16,8 +16,8 @@
 import { Component, Vue, Prop } from 'nuxt-property-decorator'
 
 @Component({
-  name: "errorLayout",
-  layout: "empty",
+  name: 'errorLayout',
+  layout: 'empty',
   head(this: Error) {
     const title =
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
@@ -33,9 +33,9 @@ export default class Error extends Vue {
   @Prop()
   error: any
 
-  mounted() {
-    console.warn('>>> this: ', this)
-  }
+  // mounted () {
+  //   console.warn('>>> this: ', this)
+  // }
 }
 </script>
 

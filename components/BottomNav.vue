@@ -1,24 +1,10 @@
 <template>
-
-  <v-bottom-navigation
-    app
-    fixed
-    grow
-    v-model="activeItem"
-    color="primary"
-  >
-    <v-btn
-      v-for="(item, i) in items"
-      :key="i"
-      :to="item.to"
-      router
-      exact
-    >
+  <v-bottom-navigation v-model="activeItem" app fixed grow color="primary">
+    <v-btn v-for="(item, i) in items" :key="i" :to="item.to" router exact>
       <span>{{ item.title }}</span>
       <v-icon>{{ item.icon }}</v-icon>
     </v-btn>
   </v-bottom-navigation>
-
 </template>
 
 <script lang="ts">
